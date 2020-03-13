@@ -1,8 +1,14 @@
 [run]
+; app 폴더 안의 내용 검사
 source =
     app
 
+; 지정한 경로는 report에서 제외
 omit =
     app/manage.py
     app/config/asgi.py
     app/config/wsgi.py
+
+[report]
+exclude_lines =
+    def __str__
